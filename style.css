@@ -140,7 +140,6 @@ main {
 
 @media screen and (min-width: 750px) {
     main {    
-        margin: auto 2rem;
         flex-direction: row;
     }
 
