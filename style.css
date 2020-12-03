@@ -40,7 +40,7 @@ main {
 }
 
 .X6DENT__Picture {
-    width: 80%;
+    width: 350px;
 }
 
 .X6DENT__Picture > img {
@@ -50,6 +50,7 @@ main {
 }
 
 .X6DENT__Links {
+    max-width: 350px;
     z-index: 1;
     width: 90%;
     padding: 1.2rem;
@@ -141,10 +142,20 @@ main {
     main {    
         flex-direction: row;
     }
+    .X6DENT__Picture {
+        width: auto;
+        height: auto;
+    }
 
     .X6DENT__Picture > img {
         width: 30rem;
         height: 30rem;
         margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .X6DENT__Picture {
+        width: 200px;
     }
 }
