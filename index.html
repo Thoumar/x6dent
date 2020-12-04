@@ -70,32 +70,39 @@
 
         <div class='X6DENT__Overlay'></div>
 
-        <img id="aby" src='./images/zbraaa.png' alt="Zbraaaa" width="90%" />
+        <img id="halo" src='./images/haaaalllooo.png' alt="Zbraaaa" width="90%" />
+        <img id="bang" src='./images/baaaang.png' alt="Zbraaaa" width="90%" />
+        <img id="zbraaa" src='./images/zbraaa.png' alt="Zbraaaa" width="90%" />
     </main>
 
-    <script>
-        var delay;
-        var longpress = 1000;
+    <script>        
+        var halo = document.querySelector('#halo')
+        var bang = document.querySelector('#bang')
+        var zbraaa = document.querySelector('#zbraaa')
         
-        var aby = document.querySelector('#aby');
         var picture = document.querySelector('.X6DENT__Picture')
-    
+        var count = 0
         
-        picture.addEventListener('mousedown', function (e) {
-            delay = setTimeout(check, longpress);
-            
-            function check() {
-                aby.classList.add('show');
+        picture.addEventListener('click', function (e) {
+            count++
+            if(count >= 5) {
+                halo.classList.add('show');
             }
         }, true);
         
-        picture.addEventListener('mouseup', function (e) {
-            clearTimeout(delay);
-        });
-        
-        picture.addEventListener('mouseout', function (e) {
-            clearTimeout(delay);
-        });
+        halo.addEventListener('click', function (e) {
+            count++
+            if(count >= 7) {
+                bang.classList.add('show');
+            }
+        }, true);
+
+        bang.addEventListener('click', function (e) {
+            count++
+            if(count >= 9) {
+                zbraaa.classList.add('show');
+            }
+        }, true);
             
         
     </script>
