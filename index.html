@@ -21,6 +21,10 @@
 </head>
 <body class='X6DENT'>
     <main class='X6DENT__Container'>
+        <img id="halo" src='./images/haaaalllooo.png' alt="Zbraaaa" width="100%" />
+        <img id="bang" src='./images/baaaang.png' alt="Zbraaaa" width="100%" />
+        <img id="zbraaa" src='./images/zbraaa.png' alt="Zbraaaa" width="100%" />
+
         <div class='X6DENT__Picture'>
             <img src='./images/jacket.jpg' alt='Homme portant un drapeau' height="100%" width="100%" />
         </div>
@@ -67,15 +71,15 @@
         <video class='X6DENT__Video' autoplay muted loop preload="false">
             <source src="./images/bg_video.mp4"  type="video/mp4">
         </video>
+        <audio id="hello" controls="" style="display:none;">
+            <source src="https://www.w3schools.com/tags/horse.ogg" type="audio/mpeg">
+        </audio>
 
         <div class='X6DENT__Overlay'></div>
-
-        <img id="halo" src='./images/haaaalllooo.png' alt="Zbraaaa" width="90%" />
-        <img id="bang" src='./images/baaaang.png' alt="Zbraaaa" width="90%" />
-        <img id="zbraaa" src='./images/zbraaa.png' alt="Zbraaaa" width="90%" />
     </main>
 
     <script>        
+        var sound = document.querySelector('#hello')
         var halo = document.querySelector('#halo')
         var bang = document.querySelector('#bang')
         var zbraaa = document.querySelector('#zbraaa')
@@ -84,23 +88,26 @@
         var count = 0
         
         picture.addEventListener('click', function (e) {
-            count++
-            if(count >= 5) {
+            firstCounter++
+            if(firstCounter >= 5) {
                 halo.classList.add('show');
+                // sound.play()
             }
         }, true);
         
         halo.addEventListener('click', function (e) {
-            count++
-            if(count >= 7) {
+            secondCounter++
+            if(secondCounter >= 7) {
                 bang.classList.add('show');
+                // sound.play()
             }
         }, true);
 
         bang.addEventListener('click', function (e) {
-            count++
-            if(count >= 9) {
+            secondCounter++
+            if(secondCounter >= 9) {
                 zbraaa.classList.add('show');
+                // sound.play()
             }
         }, true);
             

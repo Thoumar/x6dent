@@ -235,7 +235,7 @@ main {
 #halo.show {
     position: fixed;
     bottom: 0;
-    z-index: 1;
+    z-index: 3;
     transform: translateY(0%);
 }
 
@@ -244,13 +244,13 @@ main {
     transition: .3s all cubic-bezier(0.38, -0.03, 0.43, 1.43);
     position: fixed;
     bottom: 0;
-    z-index: 1;
+    z-index: 3;
     transform: translateY(100%);
 }
 
 #bang.show {
     position: fixed;
     bottom: 0;
-    z-index: 1;
+    z-index: 3;
     transform: translateY(0%);
 }
