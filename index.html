@@ -69,6 +69,35 @@
         </video>
 
         <div class='X6DENT__Overlay'></div>
+
+        <img id="aby" src='./images/zbraaa.png' alt="Zbraaaa" width="90%" />
     </main>
+
+    <script>
+        var delay;
+        var longpress = 1000;
+        
+        var aby = document.querySelector('#aby');
+        var picture = document.querySelector('.X6DENT__Picture')
+    
+        
+        picture.addEventListener('mousedown', function (e) {
+            delay = setTimeout(check, longpress);
+            
+            function check() {
+                aby.classList.add('show');
+            }
+        }, true);
+        
+        picture.addEventListener('mouseup', function (e) {
+            clearTimeout(delay);
+        });
+        
+        picture.addEventListener('mouseout', function (e) {
+            clearTimeout(delay);
+        });
+            
+        
+    </script>
 </body>
 </html>
