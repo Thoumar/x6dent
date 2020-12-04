@@ -92,7 +92,6 @@ main {
     max-width: 350px;
     z-index: 1;
     width: 90%;
-    max-width: 400px;
     padding: 1.2rem;
     overflow: hidden;
     border-radius: 5px;
@@ -187,6 +186,9 @@ main {
     main {
         height: 100vh;
         flex-direction: row;
+    }
+    .X6DENT__Clips {
+        max-width: 400px;
     }
     .X6DENT__Picture {
         width: auto;
