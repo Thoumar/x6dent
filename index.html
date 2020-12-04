@@ -86,6 +86,7 @@
         
         var picture = document.querySelector('.X6DENT__Picture')
         var firstCounter = 0
+        var secondCounter = 0
         
         picture.addEventListener('click', function (e) {
             firstCounter++
@@ -97,7 +98,7 @@
         
         halo.addEventListener('click', function (e) {
             secondCounter++
-            if(secondCounter >= 7) {
+            if(secondCounter >= 2) {
                 bang.classList.add('show');
                 // sound.play()
             }
@@ -105,7 +106,7 @@
 
         bang.addEventListener('click', function (e) {
             secondCounter++
-            if(secondCounter >= 9) {
+            if(secondCounter >= 3) {
                 zbraaa.classList.add('show');
                 // sound.play()
             }
