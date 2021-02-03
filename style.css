@@ -1,257 +1,257 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-*:hover
-*:active, 
+*:hover *:active,
 *:focus {
-    outline: 0 none;
+	outline: 0 none;
 }
 
 html {
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	font-family: "Poppins", sans-serif;
 }
 
 body {
-    width: 100vw;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    background-size: cover;
-    background-attachment: fixed;
-    justify-content: space-around;
+	width: 100vw;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	background-size: cover;
+	background-attachment: fixed;
+	justify-content: space-around;
 }
 
 main {
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    transition: .2s ease-out;
-    justify-content: space-around;
-    overflow-y: scroll;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.2s ease-out;
+	justify-content: space-around;
+	overflow-y: scroll;
 }
 
 .X6DENT__Picture {
-    margin-top: 2rem;
-    width: 350px;
+	margin-top: 2rem;
+	width: 350px;
 }
 
 .X6DENT__Picture > img {
-    width: 100%;
-    /* animation: 1s ease-out 0s 1 slideInFromBottom;
+	width: 100%;
+	/* animation: 1s ease-out 0s 1 slideInFromBottom;
     box-shadow: 0px 5px 10px 10px rgb(0 0 0 / 10%); */
 }
 
-
 .X6DENT__Clips {
-    overflow: hidden;
-    border-radius: 5px;
-    width: 90%;
-    margin: 2rem 0;
-    padding: 1.2rem;
-    position: relative;
-    background: inherit;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+	overflow: hidden;
+	border-radius: 5px;
+	width: 90%;
+	margin: 2rem 0;
+	padding: 1.2rem;
+	position: relative;
+	background: inherit;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
 }
 
 .X6DENT__Clips:before {
-    content: "";
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    margin: -20px;
-    position: absolute;
-    filter: blur(10px);
-    background: inherit;
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+	content: "";
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	margin: -20px;
+	position: absolute;
+	filter: blur(10px);
+	background: inherit;
+	box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
 }
 
 .X6DENT__Clip {
-    box-shadow: 0px 6px 20px 4px rgb(255 255 255 / 21%);
+	box-shadow: 0px 6px 20px 4px rgb(255 255 255 / 21%);
 }
 
-
 .X6DENT__Clip > iframe {
-    display:block; 
-    border-radius: 6px;
+	display: block;
+	border-radius: 6px;
 }
 
 .X6DENT__Clip:nth-child(1),
-.X6DENT__Clip:nth-child(2) {
-    margin-bottom: 1rem;
+.X6DENT__Clip:nth-child(2),
+.X6DENT__Clip:nth-child(3) {
+	margin-bottom: 1rem;
 }
 
 .X6DENT__Links {
-    max-width: 350px;
-    z-index: 1;
-    width: 90%;
-    padding: 1.2rem;
-    overflow: hidden;
-    border-radius: 5px;
-    position: relative;
-    background: inherit;
-    margin-bottom: 2rem;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+	max-width: 350px;
+	z-index: 1;
+	width: 90%;
+	padding: 1.2rem;
+	overflow: hidden;
+	border-radius: 5px;
+	position: relative;
+	background: inherit;
+	margin-bottom: 2rem;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
 }
 
 .X6DENT__Links > li {
-    width: 100%;
-    height: 3rem;
-    font-size: 1.5rem;
-    line-height: 3rem;
-    position: relative;
-    border-radius: 6px;
-    display: inline-block;
-    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #9b78e0 50%);
-    background-size: 220%;
-    transition: all .4s;
-    box-shadow: 0px 6px 20px 4px rgb(255 255 255 / 21%);
+	width: 100%;
+	height: 3rem;
+	font-size: 1.5rem;
+	line-height: 3rem;
+	position: relative;
+	border-radius: 6px;
+	display: inline-block;
+	background-image: linear-gradient(
+		120deg,
+		transparent 0%,
+		transparent 50%,
+		#9b78e0 50%
+	);
+	background-size: 220%;
+	transition: all 0.4s;
+	box-shadow: 0px 6px 20px 4px rgb(255 255 255 / 21%);
 }
-
 
 .X6DENT__Links > li:active,
 .X6DENT__Links > li:hover {
-    background-position: 100%;
+	background-position: 100%;
 }
 .X6DENT__Links > li:not(:last-child) {
-    margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 .X6DENT__Links:before {
-    content: "";
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    margin: -20px;
-    position: absolute;
-    filter: blur(10px);
-    background: inherit;
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+	content: "";
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	margin: -20px;
+	position: absolute;
+	filter: blur(10px);
+	background: inherit;
+	box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
 }
 
 .X6DENT__Links > li > a {
-    display: flex;
-    color: #23002b;
-    margin-left: 2rem;
-    align-items: center;
-    text-decoration: none;
-    justify-content: start;
+	display: flex;
+	color: #23002b;
+	margin-left: 2rem;
+	align-items: center;
+	text-decoration: none;
+	justify-content: start;
 }
 
 .X6DENT__Links > li > a > svg {
-    margin-right: 2rem;
+	margin-right: 2rem;
 }
 
 .X6DENT__Video {
-    top: 0;
-    bottom: 0;
-    position: fixed;
-    height: 100%;
-    width: 100vw;
-    z-index: -2;
-    object-fit: cover;
+	top: 0;
+	bottom: 0;
+	position: fixed;
+	height: 100%;
+	width: 100vw;
+	z-index: -2;
+	object-fit: cover;
 }
 
 .X6DENT__Overlay {
-    position: fixed;
-    height: 100%;
-    width: 100vw;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    background-color: #9675de8f;
+	position: fixed;
+	height: 100%;
+	width: 100vw;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	background-color: #9675de8f;
 }
 
 @keyframes slideInFromBottom {
-    0% {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
+	0% {
+		opacity: 0;
+		transform: scale(0.8);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
 }
 
 @media screen and (min-width: 750px) {
-    main {
-        height: 100vh;
-        flex-direction: row;
-    }
-    .X6DENT__Clips {
-        max-width: 400px;
-    }
-    .X6DENT__Picture {
-        width: auto;
-        height: auto;
-    }
+	main {
+		height: 100vh;
+		flex-direction: row;
+	}
+	.X6DENT__Clips {
+		max-width: 400px;
+	}
+	.X6DENT__Picture {
+		width: auto;
+		height: auto;
+	}
 
-    .X6DENT__Picture > img {
-        width: 30rem;
-        height: 30rem;
-        margin-right: 2rem;
-    }
+	.X6DENT__Picture > img {
+		width: 30rem;
+		height: 30rem;
+		margin-right: 2rem;
+	}
 }
 
 @media screen and (max-width: 450px) {
-    .X6DENT__Picture {
-        width: 200px;
-    }
+	.X6DENT__Picture {
+		width: 200px;
+	}
 }
 
 #zbraaa {
-    transition: .3s all cubic-bezier(0.38, -0.03, 0.43, 1.43);
-    position: fixed;
-    bottom: 100px;
-    z-index: -3;
-    transform: translateY(150%);
+	transition: 0.3s all cubic-bezier(0.38, -0.03, 0.43, 1.43);
+	position: fixed;
+	bottom: 100px;
+	z-index: -3;
+	transform: translateY(150%);
 }
 
 #zbraaa.show {
-    position: fixed;
-    bottom: 0;
-    z-index: 6;
-    transform: translateY(0%);
+	position: fixed;
+	bottom: 0;
+	z-index: 6;
+	transform: translateY(0%);
 }
 
-
 #halo {
-    transition: .3s all cubic-bezier(0.38, -0.03, 0.43, 1.43);
-    position: fixed;
-    bottom: 100px;
-    z-index: -3;
-    transform: translateY(150%);
+	transition: 0.3s all cubic-bezier(0.38, -0.03, 0.43, 1.43);
+	position: fixed;
+	bottom: 100px;
+	z-index: -3;
+	transform: translateY(150%);
 }
 
 #halo.show {
-    position: fixed;
-    bottom: 0;
-    z-index: 4;
-    transform: translateY(0%);
+	position: fixed;
+	bottom: 0;
+	z-index: 4;
+	transform: translateY(0%);
 }
 
-
 #bang {
-    transition: .3s all cubic-bezier(0.38, -0.03, 0.43, 1.43);
-    position: fixed;
-    bottom: 100px;
-    z-index: -3;
-    transform: translateY(150%);
+	transition: 0.3s all cubic-bezier(0.38, -0.03, 0.43, 1.43);
+	position: fixed;
+	bottom: 100px;
+	z-index: -3;
+	transform: translateY(150%);
 }
 
 #bang.show {
-    position: fixed;
-    bottom: 0;
-    z-index: 5;
-    transform: translateY(0%);
+	position: fixed;
+	bottom: 0;
+	z-index: 5;
+	transform: translateY(0%);
 }
